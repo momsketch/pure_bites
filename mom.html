@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pure Bites – Homemade Snacks</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #fff4cc, #ffe3b0);
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 780px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    border-radius: 22px;
+    padding: 30px 25px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top ribbon */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(90deg, #b8322a, #e74c3c);
+}
+
+/* Logo */
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px;
+    border: 3px solid #b8322a;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+.logo-left {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.logo-right {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: #b8322a;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.header p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 12px;
+    background: #b8322a;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* Section Title */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #b8322a;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Menu box */
+.menu-box {
+    background: #fffaf0;
+    border-radius: 16px;
+    padding: 15px 18px;
+    margin-top: 15px;
+}
+
+/* Menu items */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e1cba3;
+    font-size: 15.5px;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Order box */
+.order-box {
+    margin-top: 35px;
+    background: linear-gradient(135deg, #b8322a, #e74c3c);
+    color: #fff;
+    border-radius: 18px;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.order-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.phone {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Button */
+.order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #ffffff, #ffe6d8);
+    color: #b8322a;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border: 2px solid rgba(184, 50, 42, 0.25);
+    box-shadow: 
+        0 8px 18px rgba(0, 0, 0, 0.18),
+        inset 0 0 0 rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.order-btn:hover {
+    background: linear-gradient(135deg, #b8322a, #e74c3c);
+    color: #ffffff;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Footer */
+.footer {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+    .header {
+        margin-top: 65px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="card">
+
+<img src="logo.jpeg" class="logo logo-left">
+<img src="logo.jpeg" class="logo logo-right">
+
+<div class="header">
+    <h1>PURE BITES</h1>
+    <p>Homemade • Hygienic • Fresh</p>
+    <div class="badge">Made with Pure Groundnut Oil</div>
+</div>
+
+<h2>Snacks Menu</h2>
+<div class="menu-box">
+    <div class="menu-item"><span>Sev</span><span class="price">200gm - ₹80</span></div>
+    <div class="menu-item"><span>Tikha Gathiya</span><span class="price">200gm - ₹80</span></div>
+    <div class="menu-item"><span>Sweet Shakkarpara</span><span class="price">200gm - ₹90</span></div>
+    <div class="menu-item"><span>Ghau Bajri na Vada</span><span class="price">200gm - ₹90</span></div>
+    <div class="menu-item"><span>Farsi Puri</span><span class="price">200gm - ₹80</span></div>
+    <div class="menu-item"><span>Methi Puri</span><span class="price">200gm - ₹80</span></div>
+    <div class="menu-item"><span>Wheat Masala Puri</span><span class="price">200gm - ₹80</span></div>
+    <div class="menu-item"><span>Roasted Poha Chevdo</span><span class="price">200gm - ₹70</span></div>
+    <div class="menu-item"><span>Peri Peri Nachos</span><span class="price">200gm - ₹90</span></div>
+    <div class="menu-item"><span>Butter Chakri</span><span class="price">200gm - ₹85</span></div>
+    <div class="menu-item"><span>Fulvadi</span><span class="price">200gm - ₹60</span></div>
+    <div class="menu-item"><span>Khakhra (Hand Rolled)</span><span class="price">500gm - ₹120</span></div>
+    <div class="menu-item"><span>Methi na Thepla (5 pcs)</span><span class="price">₹50</span></div>
+</div>
+
+<div class="order-box">
+    <h3>📩 Order Now</h3>
+    <p>Snehal Mehta</p>
+    <div class="phone">📞 78610 15192</div>
+    <a href="tel:7861015192" class="order-btn">Call to Order</a>
+    <div class="footer">C-203, Sheetal West Park Residency</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
